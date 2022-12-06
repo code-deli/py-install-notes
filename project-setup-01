@@ -1,0 +1,35 @@
+In this document we will set up a project from the scratch and check its nuances.
+
+mkdir -p ~/code/first01
+cd ~/code/
+
+~/code is the ROOT dir
+
+
+1. create a virtual environment using venv - we will try with poetry later on 
+   > python -m venv .venv
+   > source .venv/bin/activate
+   
+2. pyproject-build   
+   ERROR Source /Users/rav/code does not appear to be a Python project: no pyproject.toml or setup.py
+
+3. touch pyproject.toml
+
+4. ls   - list the contents of . folder
+   first01     pyproject.toml
+
+5. pyproject-build
+   does a load of stuff , install setuptools , creates a dist folder ,
+   inside dist folder a. .tgz which are the sources  b. .whl which is the binary distribution
+   
+6. ls 
+   dist             first01          first01.egg-info    pyproject.toml
+   
+7. ls dist 
+   UNKNOWN-0.0.0-py3-none-any.whl first01-0.0.0.tar.gz
+   
+   It shows UNKNOWN as we have not supplied meta information which can be done in pyproject.toml
+   
+8.    
+   
+   
