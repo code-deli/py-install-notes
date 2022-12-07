@@ -16,6 +16,21 @@ source ~/envs/cicdbuild/bin/activate
 
 (cicdbuild) > 
 
+you can either activate the virtual envs or install using 
+python -m pipx install cookiecutter 
+
+either way its ok , if you do one and then do again u may get this message ...
+(cicdbuild) ➜  code pipx install pre-commit
+'pre-commit' already seems to be installed. Not modifying existing installation in '/Users/ravi/.local/pipx/venvs/pre-commit'. Pass '--force' to force installation.
+
+OR 
+
+eithout venv 
+
+cicdbuild) ➜  code pipx install tox
+'tox' already seems to be installed. Not modifying existing installation in '/Users/ravi/.local/pipx/venvs/tox'. Pass '--force' to force installation.
+
+
 4. Install pipx , is a management tool for running other Python tools in isolated environments
   > pip install pipx
   This will install pipx for python 3.10 as shown above as its global *3.10.6
